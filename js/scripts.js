@@ -14,6 +14,7 @@ $(document).ready(function() {
     } else {
       $(".initialInput").hide();
       $(".transInput").show();
+      $(".output").show();
 
       var freshAccount = new Account(name, startingDeposit);
       window.freshAccount = freshAccount;

@@ -1,3 +1,24 @@
 .transInput{
   display: none;
 }
+
+.output{
+  display: none;
+}
+
+.form-control{
+  margin-bottom: 10px;
+  max-width: 25rem;
+}
+
+.output{
+  padding-top: 5px;
+  font-size: 23px;
+  font-family: 'Raleway', sans-serif;
+  background-color: #347FC4;
+}
+
+body{
+
+  background-color: #D4ADCF;
+}

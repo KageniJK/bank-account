@@ -7,7 +7,8 @@
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/jquery-3.3.1.js" charset="utf-8"></script>
   <script src="js/scripts.js" charset="utf-8"></script>
-  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Neuton|Raleway|Vidaloka" rel="stylesheet">
+  <title>Moringa Bank</title>
 </head>
 
 <body>
@@ -28,23 +29,27 @@
       </form>
 
     </div>
-    <div class="transInput">
-      <form>
-        <label for="withdraw">Enter amount to withdraw</label>
-        <input type="number" value="0" id="withdraw" class="form-control">
 
-        <label for="deposit">Enter The amount you want to deposit</label>
-        <input type="number" value="0" id="deposit" class="form-control">
+    <div class="row">
+      <div class="transInput col-md-6">
+        <form>
+          <label for="withdraw">Enter amount to withdraw</label>
+          <input type="number" value="0" id="withdraw" class="form-control">
 
-        <button type="submit" id="transact">Transact!</button>
-      </form>
+          <label for="deposit">Enter The amount you want to deposit</label>
+          <input type="number" value="0" id="deposit" class="form-control">
+
+          <button type="submit" id="transact">Transact!</button>
+        </form>
+      </div>
+      <div class="output col-md-6">
+        <h3>Account details:</h3>
+        <span id="outputName"></span>
+        <br>
+        <span id="outputBal"></span>
+      </div>
     </div>
-    <div class="output">
-      <h6>Account details:</h6>
-      <span id="outputName"></span>
-      <br>
-      <span id="outputBal"></span>
-    </div>
+
   </div>
 </body>
 
