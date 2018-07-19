@@ -11,36 +11,40 @@
 </head>
 
 <body>
-  <h1>Bank Account</h1>
+  <div class="container container-fluid">
 
-  <div class="initialInput">
-    <form>
-      <label for="nameInput">Enter Full Name</label>
-      <input type="text" id="nameInput" class="form-control" required>
 
-      <label for="initialDeposit">Enter The amount you want to deposit</label>
-      <input type="number" value="0" id="initialDeposit" class="form-control">
+    <h1>Bank Account</h1>
 
-      <button type="submit" id="create">Create!</button>
-    </form>
+    <div class="initialInput">
+      <form>
+        <label for="nameInput">Enter Full Name</label>
+        <input type="text" id="nameInput" class="form-control" required>
 
-  </div>
-  <div class="transInput">
-    <form>
-      <label for="withdraw">Enter amount to withdraw</label>
-      <input type="number" value="0" id="withdraw" class="form-control">
+        <label for="initialDeposit">Enter The amount you want to deposit</label>
+        <input type="number" value="0" id="initialDeposit" class="form-control">
 
-      <label for="deposit">Enter The amount you want to deposit</label>
-      <input type="number" value="0" id="deposit" class="form-control">
+        <button type="submit" id="create">Create!</button>
+      </form>
 
-      <button type="submit" id="transact">Transact!</button>
-    </form>
-  </div>
-  <div class="output">
-    <h6>Account details:</h6>
-    <span id="outputName"></span>
-    <br>
-    <span id="outputBal"></span>
+    </div>
+    <div class="transInput">
+      <form>
+        <label for="withdraw">Enter amount to withdraw</label>
+        <input type="number" value="0" id="withdraw" class="form-control">
+
+        <label for="deposit">Enter The amount you want to deposit</label>
+        <input type="number" value="0" id="deposit" class="form-control">
+
+        <button type="submit" id="transact">Transact!</button>
+      </form>
+    </div>
+    <div class="output">
+      <h6>Account details:</h6>
+      <span id="outputName"></span>
+      <br>
+      <span id="outputBal"></span>
+    </div>
   </div>
 </body>
 
