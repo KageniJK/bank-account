@@ -1,3 +1,5 @@
+//front end
+
 $(document).ready(function(){
   $(".initialInput form").submit(function(event){
     event.preventDefault();
@@ -11,5 +13,15 @@ $(document).ready(function(){
     $("#outputName").text(name);
     $("#outputBal").text(startingDeposit);
 
+  });
+
+  $(".transInput form").submit(function(event){
+    event.preventDefault();
+
+    var withdraw = $("input#withdraw").val();
+    var deposit = $("input#deposit").val();
+
+    console.log(withdraw);
+    console.log(deposit);
   });
 });
