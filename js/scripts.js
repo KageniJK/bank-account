@@ -7,11 +7,13 @@ $(document).ready(function(){
     var name = $("input#nameInput").val();
     var startingDeposit = parseInt($("input#initialDeposit").val());
 
+    var freshAccount= new Account (name,startingDeposit);
+    window.freshAccount=freshAccount;
     //console.log(name);
     console.log(typeof startingDeposit);
 
-    $("#outputName").text(name);
-    $("#outputBal").text(deposit(startingDeposit));
+    $("#outputName").text(freshAccount.name);
+    $("#outputBal").text(freshAccount.deposit(startingDeposit));
 
   });
 
@@ -21,8 +23,11 @@ $(document).ready(function(){
     var withdraw = parseInt($("input#withdraw").val());
     var depo = parseInt($("input#deposit").val());
 
-    console.log(currentBal);
-    $("#outputBal").text(deposit(depo));
+    $("#outputBal").text(freshAccount.withdrawal(withdraw));
+    $("#outputBal").text(freshAccount.deposit(depo));
+
+    $("input#withdraw").val("0");
+    $("input#deposit").val("0");
   });
 });
 
@@ -31,7 +36,17 @@ $(document).ready(function(){
 
  var currentBal = 0;
 
- function deposit (x){
+ function Account(Name,Current){
+   this.name = Name;
+   this.current = Current;
+ }
+
+ Account.prototype.deposit= function (x){
    currentBal += x;
+   return currentBal;
+ }
+
+ Account.prototype.withdrawal= function (y){
+   currentBal -= y;
    return currentBal;
  }
